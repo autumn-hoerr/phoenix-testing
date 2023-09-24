@@ -19,6 +19,7 @@ defmodule LearningWeb.Router do
 
     get "/", PageController, :home
     get "/mypage", MyPageController, :index
+    get "/mypage/:messenger", MyPageController, :show
   end
 
   # Other scopes may use custom stacks.
