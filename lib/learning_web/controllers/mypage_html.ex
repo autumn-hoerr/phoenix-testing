@@ -1,9 +1,5 @@
 defmodule LearningWeb.MyPageHTML do
   use LearningWeb, :html
 
-  def index(assigns) do
-    ~H"""
-    Hi. This is my page.
-    """
-  end
+  embed_templates "mypage_html/*"
 end
